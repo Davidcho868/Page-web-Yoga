@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Mandali&family=Raleway:wght@400;700&display=swap');
+
+
+/* CSS GENERAL */
+body {
+    max-width: 1060px;
+    margin: 50px auto;
+    width: 90%;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-size: 80px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-family: 'Mandaly', sans-serif;
+    margin: 0;
+    line-height: 100%;
+}
+
+.btn {
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: white;
+    color: #6e8e9b !important;
+    padding: 8px 5px;
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+}
+
+.btn:hover, input[type="radio"]:checked + label {
+    color: white !important;
+    background-color: #6e8e9b;
+}
+
+header div a.btn {
+    margin-top: 10px;
+}
+
+
+
+h2 {
+
+    font-family: 'Mandaly', sans-serif;
+    color: #6e8e9b;
+}
+
+/* CSS par SECTION */
+
+/* ****header***** */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.211), rgba(0, 0, 0, 0.211)), url(../img/yogamat.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: white;
+}
+
+.headerp {
+    letter-spacing: 2px;
+    font-size: medium;
+}
+
+#logo {
+    height: 60px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.titre1 {
+    text-align: center;
+    line-height: 20px;
+    padding: 120px 0px;
+}
+
+/* partie concept */
+
+#concept article {
+    display: flex;
+    align-items: center;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 60px;
+    background-color: #6e8e9b;
+    margin: 20px auto 20px 3px;
+}
+
+.imgconcept {
+    width: 10%;
+    border: 1px solid white;
+    border-radius: 100%;
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.238);
+    margin: 30px;
+    padding: 15px;
+}
+
+/* partie cours */
+
+section#cours img {
+    width: 250px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: 80%;
+}
+
+section#cours div.descriptionCours {
+    display: flex;
+    align-items: center;
+    gap: 6%;
+}
+
+#contact{
+    margin-bottom: 50px;
+}
+#contact div {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+#contact ul {
+    display: flex;
+    gap: 20px;
+}
+
+/* input[type="radio"]:checked + label{ 
+    color: white !important;
+    background-color: #6e8e9b;}*/
+
+
+#contact form input[type="radio"]{
+    display: none;
+}
+
+#contact form label.btn{
+    margin-left: 20px;
+}
+
+.infoperso {
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: inset 2px 3px 7px rgba(0, 0, 0, 0.238);
+    width: 350px;
+    padding: 10px;
+    display: block; 
+}
+
+.envoi {
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.238);
+    width: 150px;
+    padding: 10px;
+    margin-top: 30px;
+    display: block;
+    color: #6e8e9b;
+}
+
+/* transition des ancres */
+
+html{
+    scroll-behavior: smooth;
+}
+
+footer {
+    padding: 20px;
+    background-color: #6e8e9b;
+    color: white;
+    text-align: center;
+}
+
+@media (min-width: 991px) {
+    #concept article:nth-of-type(odd) {
+        flex-direction: row-reverse;
+    }
+}
+
+@media (max-width: 768px){
+    #concept article, #cours div{
+        flex-direction: column;
+        text-align: center;
+    }
+}
